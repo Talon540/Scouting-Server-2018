@@ -1,0 +1,36 @@
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+#barChart{
+    width: 100%;
+}
+
+#autoChart,
+#teleopChart,
+#climbingChart{
+    padding: 0;
+}
+
+.chartTlt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rawData-tlt{
+    margin-bottom: -52px;
+}
+
+@media only screen and (max-width: 600px){
+    #autoChart,
+    #teleopChart,
+    #climbingChart{
+        margin-top: -10px;
+        margin-bottom: -40px;
+    }
+    .rawData-tlt{
+        font-family: "Roboto"
+    } 
+}

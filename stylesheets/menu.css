@@ -1,0 +1,175 @@
+.formTlt, #bannerTlt, #sBannerTlt{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    font-family: "Fjalla One", sans-serif;
+    display: block;
+    float: left;
+}
+#bannerTlt:before{
+    content: "TALON ";
+    color: white;
+}
+#bannerTlt:after{
+    content: "540";
+    color: red;
+}
+.formTlt{
+    float: left;
+    text-align: right;
+    width: 300px;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+#redTlt{
+    color: red;
+}
+ul{
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.backBtn, #menu li a{
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 8px;
+    margin-left: 30px;
+
+    color: white !important;
+    font-size: 1.8em;
+    font-family: 'Lato', serif;
+    text-align: left;
+    text-decoration: none;
+}
+.backBtn{
+    width: 120px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    padding-left: 160px;
+    padding-top: 8px;
+    text-align: right;
+    background: #595959;
+}
+.backBtn:hover, #menu li a:hover{
+    color: white;
+    transition: 0.3s ease;
+    margin-left: 45px;
+    background-color: red;
+}
+.backBtn:hover {
+    margin-left: -5px;
+}
+.backBtn:active, #menu li a:active{
+    color: red;
+    background-color: white;
+    transition-duration: 0.1s;
+}
+@media only screen and (min-width: 601px){
+    .main-content{
+        z-index: 0;
+        position: relative;
+    }
+    .side-bar{
+        z-index: 9999;
+        position: relative;
+        float: none;
+        top: 0;
+        left: 0;
+        display: flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+    }
+    .menu{
+        z-index: 9999;
+        width: 100%;
+    }
+    .backBtn, #menuBtn{
+        display: none;
+    }
+    ul {
+        list-style-type: none;
+        margin-top: -20px;
+        margin-left: 0px;
+        padding: 0;
+        padding-top: 10px;
+        overflow: hidden;
+        width: 110%;
+        height: 150px;
+        background-color: #232323;
+        float: right;
+    }
+    li {
+        float: left;
+        margin-left: 35px;
+    }
+    #menu li a {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+    }
+    #menu li a:hover{
+        transition: none;
+        transform: none;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .side-bar{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999; 
+        top: 0; 
+        left: 0;
+        background-color: #1e1e1e;
+        overflow-x: hidden;
+        padding-top: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 601px){
+    #menu li a{
+        vertical-align: middle;
+        width: 60px;
+        height: 70px;
+        overflow: hidden;
+        font-size: 15px;
+        padding: 2px;
+        transition: 0.3s;
+        margin-right: -28px;
+        margin-top: 50px;
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+    #menu li a i{
+        margin-left: 0px;
+        font-size: 35px;
+    }
+    #bannerTlt{
+        font-size: 3.5em;
+        margin-left: 40px;
+        margin-top: 55px;
+        margin-right: -20px;
+    }
+}
+
+.current{
+    display: block;
+    background: red;
+    color: white !important;
+}
+
+.current:hover{
+    background:white;
+    color: red !important;
+}

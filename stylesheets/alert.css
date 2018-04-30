@@ -1,0 +1,53 @@
+.alert-content{
+    display: flex;
+    justify-content: center;
+}
+.alert-contacts, .alert-info{
+    display: flex;
+    background: #2d2d2d;
+    padding: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.alert-contacts{
+    flex: 1 0 1;
+    flex-direction: column;
+}
+.alert-info{
+    flex: 2 0 1;
+}
+.alert-tlt{
+    font-family: "Fjalla One";
+    font-size: 3em;
+    text-align: left;
+}
+#alert-i{
+    padding-right: 12px;
+}
+.alert-contact-tlt{
+    user-select: none;
+    font-size: 1.8em;
+    text-align: left;
+    border: 10px white;
+    transition: 0.3s;
+}
+.alert-group-select{
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color: white;
+    transition: 0.3s;
+    padding: 0;
+}
+.alert-group-select:hover{
+    border-color: red;
+    background: #131313;
+    cursor: pointer;
+}
+.alert-group-select:hover > .alert-contact-tlt:before{
+    transition: 0.3s;
+    content:"-> ";
+}
+.alert-group-select:focus{
+    background: white;
+    transition: 0.3s;
+}
